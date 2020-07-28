@@ -36,7 +36,7 @@ var timer;
 
 function start() {
 
-timeLeft = 60;
+timeLeft = 30;
 document.getElementById("timeLeft").innerHTML = timeLeft;
 
 timer = setInterval(function() {
@@ -59,7 +59,7 @@ clearInterval(timer);
 var quizContent = `
 <h2>Game over!</h2>
 <h3>You got a ` + score +  ` /100!</h3>
-<h3>That means you got ` + score / 20 +  ` questions correct!</h3>
+<h3>That means you got ` + score / 25 +  ` questions correct!</h3>
 <input type="text" id="name" placeholder="First name"> 
 <button onclick="setScore()">Set score!</button>`;
 
